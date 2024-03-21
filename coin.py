@@ -1,0 +1,50 @@
+print("welcome message")
+print("1 random.randint")
+print("2 random.random")
+method=int(input("chose a method"))
+if method==1:#عايز راندم دوت انت
+    chois=input("input your choise")
+    if chois.lower()=="head":
+        import random
+        cg=random.randint(0,1)
+        if cg==0:
+            cg="head"
+            print("you win")
+        else:
+            cg="tail"
+            print(f"you lose as cg{cg}")
+    elif chois.lower()=="tail":
+        import random
+        cg = random.randint(0, 1)
+        if cg == 1:
+            cg = "tail"
+            print("you win")
+        else:
+            cg = "head"
+            print(f"you lose as cg{cg}")
+    else:
+        print("please chose a vaild choise")
+elif method==2:
+    chois = input("input your choise")
+    if chois.islower() == "head":
+        import random
+
+        cg = random.random
+        if cg <=0.5:
+            cg = "head"
+            print("you win")
+        else:
+            cg = "tail"
+            print(f"you lose as cg{cg}")
+    elif chois.islower() == "tail":
+        import random
+
+        cg = random.randint
+        if cg >0.5:
+            cg = "tail"
+            print("you win")
+        else:
+            cg = "head"
+            print(f"you lose as cg{cg}")
+else:
+    print("please chose a vaild choise")
